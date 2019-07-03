@@ -1,0 +1,36 @@
+.logo {
+    height: 100px;
+    width: 345px;
+    background-color: red;
+}
+
+/*Bootstrapのドロップダウンをマウスオーバーで開く*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/**************************************/
+
+.navbar {
+  background-image: linear-gradient(to bottom, #f7f7f7 0%, #eee 100%);
+  border: 1px solid #e5e5e5;
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-nav .nav-item {
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+}
+/* レスポンシブ：縦向きタブレット以上 */
+@media screen and (min-width: 768px) {
+  /* 先に設定したpaddingを削除 */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
