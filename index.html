@@ -7,43 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/sanitize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" /> -->
     <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
 </head>
 
 <body>
-    <header>
-        <div class="logo">logo</div>
 
-        <!-- ナビゲーション -->
-        <!-- 等幅ナビゲーションメニューは、リスト項目ごとに1行で表示される。
-            複数行の場合は、Bootstrapによって提供されていないカスタムコードが必要。 -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav text-md-center nav-justified w-100">
-                    <li class="nav-item"><a class="nav-link active" href="#">ホーム</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">プロジェクト</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">サービス</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">ダウンロード</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">概要</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ドロップダウン</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="#">リンク1</a>
-                            <a class="dropdown-item" href="#">リンク2</a>
-                            <a class="dropdown-item" href="#">リンク3</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- ここまでナビ -->
-    </header>
+<!-- サブナビ部分 -->
+<div class="sub-nav-bg">
+<div class="sub-nav">
+  <ul class="sub-list">
+    <li><a href="#" class="qa">お問い合わせ</a></li>
+    <li><a href="#" class="translate">Google翻訳</a></li>
+    <li><a href="#" class="search">Google検索</a></li>
+  </ul>
+</div>
+</div>
+<!-- ここまで -->
+
+<!-- メインナビ部分 -->
+<div class="main-nav-bg">
+    <div class="main-nav">
+        <a href="#"><img class="logo" src="images/logo.png" alt=""></a>
+        <ul class="main-list">
+            <li><a href="#" class="nav1">ニュース</a></li>
+            <li><a href="#" class="nav2">研究テーマ</a></li>
+            <li><a href="#" class="nav3">業績</a></li>
+            <li><a href="#" class="nav4">セミナー</a></li>
+            <li><a href="#" class="nav5">アクセス</a></li>
+        </ul>
+    </div>
+</div>
+<!-- ここまで -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/holder.min.js"></script>
