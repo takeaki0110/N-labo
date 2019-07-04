@@ -87,4 +87,44 @@
   color: #fff;
   font-weight: bold;
 }
+
+.main-list li a:hover { /*ナビのホバーとりあえず入れただけ後でドロップダウン等にする*/
+  background-color: red;
+}
+/*ここまで*/
+
+
+/*ここから動画*/
+video{
+  position: fixed;
+ right: 0;
+ bottom: 0;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ z-index: -100; /*動画を後ろに設定*/
+}
+.cont{
+ display:flex;
+ justify-content:center;
+ margin: 20% 0 0; /*文字位置*/
+}
+.cont-inner{  /*テキストボックス*/
+ width: 300px;  /*横幅*/
+ padding: 20px; /*箱の大きさ？*/
+ border: solid 1px #fff;  /*外枠線*/
+ color: #fff;
+}
+
+/*ここまで*/
+
+/*ここから研究テーマ*/
+.thema {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: blue;
+}
+
 /*ここまで*/
