@@ -1,0 +1,31 @@
+/*ここから研究テーマ*/
+.thema {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto; /*中央寄せ*/
+  background-color: cyan;
+  text-align: center;
+}
+
+.thema ul {
+  display: flex;
+  justify-content: space-around;  /*均等配置両端余白付き*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.thema li a img{
+  width: 200px;
+  height: 200px;
+  display: block;
+  border-radius:50%;
+  border: 9px solid #00cc00; /* 枠線を付加 */
+}
+
+.thema li h3 {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/*ここまで*/
