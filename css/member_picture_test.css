@@ -1,0 +1,15 @@
+.box{
+    width: 450px;
+    height: 350px;
+    background-color: red;
+    position:relative;  /*画像を縦中央に配置にするため*/
+}
+
+.test img{
+    width: 450px;
+    height: 300px;
+    object-fit: contain;
+    position: absolute; /*画像を縦中央に配置*/
+    top: 50%;   /*画像を縦中央に配置*/
+    transform: translateY(-50%);    /*画像を縦中央に配置*/
+}

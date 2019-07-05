@@ -1,0 +1,55 @@
+
+@charset "UTF-8";
+/****************************************
+contents
+*****************************************/
+.box{   /*これがないと動画から下のエリアが隠れてしまう*/
+    margin-bottom: 120px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fitMovie{
+    position: absolute;
+}
+
+/*この下は文字表示の設定*/
+.box__centered{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+.box__contents{
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.box__title{
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.box__text{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sec{
+    margin-bottom: 120px;
+}
+
+.page-title__title{
+    color: #333;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+
+
+

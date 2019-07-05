@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
 <!-- サブナビ部分 -->
     <div class="sub-nav-bg">
         <div class="sub-nav">
@@ -25,6 +26,7 @@
         </div>
     </div>
 <!-- ここまで -->
+
 <!-- メインナビ部分 -->
     <div class="main-nav-bg">
         <div class="main-nav">
@@ -38,33 +40,52 @@
             </ul>
         </div>
     </div>
-<!-- ここまで -->
+    <!-- ここまで -->
+
 <!-- ここから動画 -->
-<div class="main-visual">
-    <video autoplay muted loop controls>
-        <source src="movies/test.wmv">
-        <source src="movies/test.mp4">
-        <p>動画の再生に対応したブラウザをインストールしてください。</p>
-    </video>
-    <div class="cont">
-        <div class="cont-inner">Welcome to Nakaguchi Labo HP</div>
+    <div class="main-visual">   <!-- ここからvideoタグまでをbody直下に置くと動画が背景全面にできる -->
+        <video src="movies/test.mp4" class="fitMovie" preload="metadata" autoplay loop muted>
+                <!--<source src="images/mainvisual.mp4">-->
+            <p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
+        </video>
+
+<!-- ここは文字表示 -->
+        <div class="main-visual__centered">
+            <div class="main-visual__contents">
+                <h1 class="main-visual__title">Welcome to Nakaguchi Labo HP!</h1>
+            </div>
+        </div>
     </div>
+<!-- ここまで -->
+
+<!-- ここから研究テーマ -->
+<div class="thema">
+<p>中口研究室ではコンピュータ画像処理技術を活用して
+ 診断支援・治療支援・生体計測に関する研究を行っています。</p>
+ <h2>研究テーマ</h2>
+        <div class="thema-contents">
+            <ul>
+                <li><h3>治療支援</h3><a href="#"><img src="images/thema1.jpg" alt=""></a></li>
+                <li><h3>医療訓練システム</h3><a href="#"><img src="images/thema2.jpg" alt=""></a></li>
+                <li><h3>舌画像の計測・解析</h3><a href="#"><img src="images/thema3.jpg" alt=""></a></li>
+                <li><h3>画像診断支援</h3><a href="#"><img src="images/thema4.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <p>研究業績・学会発表等の詳細が知りたい方は<a href="#">こちら</a>へ</p>
 </div>
 <!-- ここまで -->
 
-<!-- 研究テーマ -->
-        <div class="thema">
-
-
-        </div>
-
-
+<!-- ここからニュース・Twitter -->
+<div class="info">
+    <div class="news">最近のニュース</div>
+    <div class="twitter">Twitterのタイムライン</div>
+</div>
 <!-- ここまで -->
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/holder.min.js"></script>
+    <script type="text/javascript" src="js/movie.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="js/holder.min.js"></script> -->
 </body>
 
 </html>

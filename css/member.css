@@ -1,0 +1,40 @@
+/*ここからメンバーエリア*/
+
+.intro-area {
+    width: 1000px;
+    height: 1000px;
+    background-color: red;
+}
+.member {
+    display: flex;
+    justify-content: space-between; /*最初と最後の要素を両端に配置して、残りの要素を均等に配置*/
+}
+
+.professor {
+    width: 450px;
+    height: 350px;
+    background-color: green;
+}
+.room-member {
+    width: 450px;
+    height: 350px;
+    background-color: yellow;
+}
+
+.event {
+    display: flex;
+    justify-content: space-between; /*最初と最後の要素を両端に配置して、残りの要素を均等に配置*/
+}
+
+.event-picture1 {
+    width: 450px;
+    height: 350px;
+    background-color: cyan;
+}
+.event-picture2 {
+    width: 450px;
+    height: 350px;
+    background-color: magenta;
+}
+
+/*ここまで*/

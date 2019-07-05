@@ -1,0 +1,19 @@
+.gl-footer {
+    width: 1000px;
+    height: 200px;
+    background-color: #076eb2;
+    margin: 0 auto;
+}
+
+.footer-logo {
+
+}
+
+
+
+.copyright {
+    width: 1000px;
+    height: 30px;
+    background-color: cyan;
+    margin-top:170px;
+}
