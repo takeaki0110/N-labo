@@ -151,6 +151,7 @@
   display: block;
   border-radius:50%;
   border: 9px solid #00cc00; /* 枠線を付加 */
+  object-fit: cover;
 }
 
 .thema li h3 {
@@ -186,3 +187,126 @@
 }
 /*ここまで*/
 
+/*ここからメンバーエリア*/
+.member-area {
+    width: 1000px;
+    height: 1000px;
+    background-color: green;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.member-area h2 {
+    padding-top: 30px;
+    margin-bottom: -10px;
+}
+.member-area h3 {
+    padding-top: 30px;
+    margin-bottom: -5px;
+}
+
+.labo-member {
+    display: flex;
+    justify-content: space-between;
+}
+
+.labo-frame {   /*表題＋写真*/
+    width: 450px;
+    text-align: center;
+}
+
+.member-bg {    /*写真の枠*/
+    width: 450px;
+    height: 350px;
+    background-color: red;
+    position: relative; /*通常の表示位置を基準にした相対位置。画像を中央配置するのにこれも必要*/
+    border: 5px solid blue; /*外枠線つけてみた*/
+}
+
+.member-bg img {
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+    position: absolute; /*親要素を基準にした絶対位置*/
+    top: 50%;   /*親要素の上から50％の位置に*/
+    left: 50%;  /*親要素の左から50％の位置に*/
+    transform: translate(-50%,-50%);    /*ズレを補正*/
+}
+/*ここまで
+
+/*ここからアクセス*/
+.gl-access {
+    text-align: center;
+    background-color: yellow;
+}
+
+.access-text {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/****Googleマップを縦横比固定でレスポンシブル化****/
+.gmap {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 縦横比の指定 */
+    position: relative;
+}
+.gmap iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100% !important;
+    width: 100% !important;
+}
+/***************/
+/*ここまで*/
+
+/*ここからフッター*/
+.gl-footer {
+    width: 1000px;
+    height: 170px;
+    background-color: #076eb2;
+    margin: 0 auto;
+    display: flex;  /*横並び*/
+    align-items: center;    /*上下中央*/
+}
+
+.logo-address {
+    display: flex;
+}
+
+.footer-logo {
+    width: 80px;
+    height: 100px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+.footer-address {
+    margin-left: 20px;
+}
+
+.link-box {
+    overflow: hidden;
+}
+
+.link-list {
+    list-style: none;
+    margin : 0;
+    padding: 0 0 0 20px;
+    float: left;
+}
+
+.link-list-member {
+    font-size: 14px;
+}
+
+.copyright {
+    width: 1000px;
+    height: 30px;
+    background-color: cyan; /*  本当は色は#076eb2*/
+    margin: 0 auto;
+    text-align: center;
+}
+/*ここまで*/

@@ -1,64 +1,66 @@
 /*ここからサブナビ*/
-.sub-nav-bg {  /*サブナビに背景色つけている*/
-  width: 100%;
-  background-color: red;
+.sub-nav-bg {
+    /*サブナビに背景色つけている*/
+    width: 100%;
+    background-color: red;
 }
 
 .sub-nav {
-  max-width:1000px;
-  margin: 0 auto; /*中央に*/
-  height:30px;
-  background-color: blue;
-  overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;    /*中央に*/
+    height: 30px;
+    background-color: blue;
+    overflow: hidden;
 }
 
-.sub-list{
-  list-style-type: none;
-  display: flex;  /*リスト内を横並び*/
-  float: right; /*右に寄せる*/
-  padding: 0; /*リストの余白をリセット*/
-  margin: 0; /*リストの余白をリセット*/
+.sub-list {
+    list-style-type: none;
+    display: flex;    /*リスト内を横並び*/
+    float: right;   /*右に寄せる*/
+    padding: 0;    /*リストの余白をリセット*/
+    margin: 0;    /*リストの余白をリセット*/
 }
 
-.qa{
-  display: block; /*a要素をブロック化*/
-  width: 100px;
-  text-align: center;
-  background-color: #333;
-  height: 30px;
-  line-height: 30px; /*行の高さ*/
+.qa {
+    display: block;    /*a要素をブロック化*/
+    width: 100px;
+    text-align: center;
+    background-color: #333;
+    height: 30px;
+    line-height: 30px;    /*行の高さ*/
 }
 
-.translate{ /*とりあえず色入れてるだけ*/
-  display: block; /*a要素をブロック化*/
-  width: 200px;
-  height: 30px;
-  background-color: green;
+.translate {    /*とりあえず背景色入れてるだけ*/
+    display: block;    /*a要素をブロック化*/
+    width: 200px;
+    height: 30px;
+    background-color: green;
 }
-.search{ /*とりあえず色入れてるだけ*/
-  display: block; /*a要素をブロック化*/
-  width: 200px;
-  height: 30px;
-  background-color: yellow;
+
+.search {    /*とりあえず背景色入れてるだけ*/
+    display: block;    /*a要素をブロック化*/
+    width: 200px;
+    height: 30px;
+    background-color: yellow;
 }
 /*ここまで*/
 
 /*ここからメインナビ*/
-.main-nav-bg {  /*メインナビの背景色入れてるだけ*/
-  width: 100%;
-  background-color: purple;
+.main-nav-bg {    /*メインナビの背景色入れてるだけ*/
+    width: 100%;
+    background-color: purple;
 }
 
 .main-nav {
-  max-width: 1000px;  /*最大幅*/
-  margin: 0 auto; /*中央揃え*/
+    max-width: 1000px;    /*最大幅*/
+    margin: 0 auto;    /*中央揃え*/
 }
 
 .logo {
     max-height: 100px;
     max-width: 400px;
     width: 40%;
-    object-fit: contain;  /* 画像を縦横比を維持して縮小 */
+    object-fit: contain;    /* 画像を縦横比を維持して縮小 */
     background-color: grey;
     display: block;
     margin: 0;
@@ -66,41 +68,216 @@
 }
 
 .main-list {
-  list-style: none;
-  display: flex;  /*横並び*/
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    display: flex;    /*横並び*/
+    padding: 0;
+    margin: 0;
 }
+
 .main-list li {
-  width: 120px;
-  text-align: center;
-  background-color: #333;
-  height: 100px;
-  line-height: 100px; /*行の高さ*/
-  border: 1px solid grey;
-/*  margin-right: 2px; */
+    width: 120px;
+    text-align: center;
+    background-color: #333;
+    height: 100px;
+    line-height: 100px;    /*行の高さ*/
+    border: 1px solid grey;    /*  margin-right: 2px; */
 }
 
 .main-list li a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
 
-.main-list li a:hover { /*ナビのホバーとりあえず入れただけ後でドロップダウン等にする*/
-  background-color: red;
+.main-list li a:hover {    /*ナビのホバーとりあえず入れただけ後でドロップダウン等にする*/
+    background-color: red;
 }
 /*ここまで*/
-
 
 /*ここから動画*/
-.picture {
-  width: 100%;
-//  max-height: 500px;
-//  object-fit: contain;  /* 画像を縦横比を維持して縮小 */
+.main-visual{   /*これがないと動画から下のエリアが隠れてしまう*/
+    /*margin-bottom: 120px;*/
+    overflow: hidden;
+    position: relative;
+}
+.main-visual video {
+    z-index: -1;    /*動画を背景動画として表示 動画の位置を変えるときのため一応入れてある*/
+}
 
+.fitMovie{
+    position: absolute;
+}
+
+/*この下は文字表示の設定*/
+.main-visual__centered {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+.main-visual__contents {
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.main-visual__title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+}
+/*ここまで*/
+
+/*ここから研究テーマ*/
+.thema {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto; /*中央寄せ*/
+  background-color: cyan;
+  text-align: center;
+}
+
+.thema ul {
+  display: flex;
+  justify-content: space-around;  /*均等配置両端余白付き*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.thema li a img{
+  width: 200px;
+  height: 200px;
+  display: block;
+  border-radius:50%;
+  border: 9px solid #00cc00; /* 枠線を付加 */
+}
+
+.thema li h3 {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/*ここまで*/
+
+/*ここからニュース・Twitter*/
+.info {
+  width: 1000px;
+  height: 500px;
+  background-color: blue;
+  margin: 0 auto;
+}
+
+.news {
+  width: 450px;
+  height: 400px;
+  background-color: green;
+  float: left;
+  margin-top: 50px;
+  text-align: center;
+ }
+.twitter {
+  width: 450px;
+  height: 400px;
+  background-color: yellow;
+  float: right;
+  margin-top: 50px;
+  text-align: center;
+}
+/*ここまで*/
+
+/*ここからメンバーエリア*/
+
+.intro-area {
+    width: 1000px;
+    height: 1000px;
+    background-color: red;
+    margin: 0 auto;
+}
+.member {
+    display: flex;
+    justify-content: space-between; /*最初と最後の要素を両端に配置して、残りの要素を均等に配置*/
+}
+
+.professor {
+    width: 450px;
+    height: 350px;
+    background-color: green;
+}
+.room-member {
+    width: 450px;
+    height: 350px;
+    background-color: yellow;
+}
+
+.event {
+    display: flex;
+    justify-content: space-between; /*最初と最後の要素を両端に配置して、残りの要素を均等に配置*/
+}
+
+.event-picture1 {
+    width: 450px;
+    height: 350px;
+    background-color: cyan;
+}
+.event-picture2 {
+    width: 450px;
+    height: 350px;
+    background-color: magenta;
 }
 
 /*ここまで*/
 
+/*ここからアクセス*/
+
+/****Googleマップを縦横比固定でレスポンシブル化****/
+.gmap {
+height: 0;
+overflow: hidden;
+padding-bottom: 56.25%; /* 縦横比の指定 */
+position: relative;
+}
+.gmap iframe {
+position: absolute;
+left: 0;
+top: 0;
+height: 100% !important;
+width: 100% !important;
+}
+/***************/
+
+/*ここまで*/
+/*ここからフッター*/
+.gl-footer {
+    width: 1000px;
+    height: 200px;
+    background-color: #076eb2;
+    margin: 0 auto;
+}
+
+.logo-address {
+    display: flex;
+}
+
+.footer-logo {
+    width: 80px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.link-list {
+}
+
+.gl-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.copyright {
+    width: 1000px;
+    height: 30px;
+    background-color: cyan;
+    /*margin-top:170px;*/
+}
+/*ここまで*/

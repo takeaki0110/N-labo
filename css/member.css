@@ -1,40 +1,46 @@
 /*ここからメンバーエリア*/
-
-.intro-area {
+.member-area {
     width: 1000px;
     height: 1000px;
-    background-color: red;
-}
-.member {
-    display: flex;
-    justify-content: space-between; /*最初と最後の要素を両端に配置して、残りの要素を均等に配置*/
-}
-
-.professor {
-    width: 450px;
-    height: 350px;
     background-color: green;
-}
-.room-member {
-    width: 450px;
-    height: 350px;
-    background-color: yellow;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.event {
+.member-area h2 {
+    padding-top: 30px;
+    margin-bottom: -10px;
+}
+.member-area h3 {
+    padding-top: 30px;
+    margin-bottom: -5px;
+}
+
+.labo-member {
     display: flex;
-    justify-content: space-between; /*最初と最後の要素を両端に配置して、残りの要素を均等に配置*/
+    justify-content: space-between;
 }
 
-.event-picture1 {
+.labo-frame {   /*表題＋写真*/
     width: 450px;
-    height: 350px;
-    background-color: cyan;
-}
-.event-picture2 {
-    width: 450px;
-    height: 350px;
-    background-color: magenta;
+    text-align: center;
 }
 
-/*ここまで*/
+.member-bg {    /*写真の枠*/
+    width: 450px;
+    height: 350px;
+    background-color: red;
+    position: relative; /*通常の表示位置を基準にした相対位置。画像を中央配置するのにこれも必要*/
+    border: 5px solid blue; /*外枠線つけてみた*/
+}
+
+.member-bg img {
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+    position: absolute; /*親要素を基準にした絶対位置*/
+    top: 50%;   /*親要素の上から50％の位置に*/
+    left: 50%;  /*親要素の左から50％の位置に*/
+    transform: translate(-50%,-50%);    /*ズレを補正*/
+}
+/*ここまで

@@ -1,19 +1,27 @@
 /*ここからアクセス*/
+.gl-access {
+    text-align: center;
+    background-color: yellow;
+}
+
+.access-text {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 /****Googleマップを縦横比固定でレスポンシブル化****/
 .gmap {
-height: 0;
-overflow: hidden;
-padding-bottom: 56.25%; /* 縦横比の指定 */
-position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 縦横比の指定 */
+    position: relative;
 }
 .gmap iframe {
-position: absolute;
-left: 0;
-top: 0;
-height: 100% !important;
-width: 100% !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100% !important;
+    width: 100% !important;
 }
 /***************/
-
 /*ここまで*/

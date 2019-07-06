@@ -21,6 +21,7 @@
   display: block;
   border-radius:50%;
   border: 9px solid #00cc00; /* 枠線を付加 */
+  object-fit: cover;
 }
 
 .thema li h3 {
