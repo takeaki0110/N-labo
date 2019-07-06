@@ -1,0 +1,96 @@
+/*ここからサブナビ*/
+.sub-nav-bg {
+    /*サブナビに背景色つけている*/
+    width: 100%;
+    background-color: red;
+}
+
+.sub-nav {
+    max-width: 1000px;
+    margin: 0 auto;    /*中央に*/
+    height: 30px;
+    background-color: blue;
+    overflow: hidden;
+}
+
+.sub-list {
+    list-style-type: none;
+    display: flex;    /*リスト内を横並び*/
+    float: right;   /*右に寄せる*/
+    padding: 0;    /*リストの余白をリセット*/
+    margin: 0;    /*リストの余白をリセット*/
+}
+
+.qa {
+    display: block;    /*a要素をブロック化*/
+    width: 100px;
+    text-align: center;
+    background-color: #333;
+    height: 30px;
+    line-height: 30px;    /*行の高さ*/
+}
+
+.translate {    /*とりあえず背景色入れてるだけ*/
+    display: block;    /*a要素をブロック化*/
+    width: 200px;
+    height: 30px;
+    background-color: green;
+}
+
+.search {    /*とりあえず背景色入れてるだけ*/
+    display: block;    /*a要素をブロック化*/
+    width: 200px;
+    height: 30px;
+    background-color: yellow;
+}
+/*ここまで*/
+
+/*ここからメインナビ*/
+.main-nav-bg {    /*メインナビの背景色入れてるだけ*/
+    width: 100%;
+    background-color: purple;
+}
+
+.main-nav {
+    max-width: 1000px;    /*最大幅*/
+    margin: 0 auto;    /*中央揃え*/
+}
+
+.logo {
+    max-height: 100px;
+    max-width: 400px;
+    width: 40%;
+    object-fit: contain;    /* 画像を縦横比を維持して縮小 */
+    background-color: grey;
+    display: block;
+    margin: 0;
+    float: left;
+}
+
+.main-list {
+    list-style: none;
+    display: flex;    /*横並び*/
+    padding: 0;
+    margin: 0;
+}
+
+.main-list li {
+    width: 120px;
+    text-align: center;
+    background-color: #333;
+    height: 100px;
+    line-height: 100px;    /*行の高さ*/
+    border: 1px solid grey;    /*  margin-right: 2px; */
+}
+
+.main-list li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.main-list li a:hover {    /*ナビのホバーとりあえず入れただけ後でドロップダウン等にする*/
+    background-color: red;
+}
+/*ここまで*/

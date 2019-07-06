@@ -1,0 +1,32 @@
+/*ここから動画*/
+.main-visual{   /*これがないと動画から下のエリアが隠れてしまう*/
+    /*margin-bottom: 120px;*/
+    overflow: hidden;
+    position: relative;
+}
+.main-visual video {
+    z-index: -1;    /*動画を背景動画として表示 動画の位置を変えるときのため一応入れてある*/
+}
+
+.fitMovie{
+    position: absolute;
+}
+
+/*この下は文字表示の設定*/
+.main-visual__centered {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+.main-visual__contents {
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.main-visual__title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+}
+/*ここまで*/
