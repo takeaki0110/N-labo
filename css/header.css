@@ -21,13 +21,24 @@
     margin: 0;    /*リストの余白をリセット*/
 }
 
+.sub-access {
+    display: block;    /*a要素をブロック化*/
+    width: 100px;
+    text-align: center;
+    background-color: grey;
+    height: 30px;
+    line-height: 30px;    /*行の高さ*/
+    border: 1px solid yellow;
+}
+
 .qa {
     display: block;    /*a要素をブロック化*/
     width: 100px;
     text-align: center;
-    background-color: #333;
+    background-color: grey;
     height: 30px;
     line-height: 30px;    /*行の高さ*/
+    border: 1px solid yellow;
 }
 
 .translate {    /*とりあえず背景色入れてるだけ*/
@@ -57,9 +68,12 @@
 }
 
 .logo {
-    max-height: 100px;
-    max-width: 400px;
-    width: 40%;
+    /*max-height: 100px;*/
+    /*max-width: 400px;*/
+    /*width: 40%;*/
+    max-height: 90px;
+    max-width: 310x;
+    width: 31%;
     object-fit: contain;    /* 画像を縦横比を維持して縮小 */
     background-color: grey;
     display: block;
@@ -75,11 +89,14 @@
 }
 
 .main-list li {
-    width: 120px;
+    /*width: 120px;*/
+    width: 115px;
     text-align: center;
     background-color: #333;
-    height: 100px;
-    line-height: 100px;    /*行の高さ*/
+    /*height: 100px;*/
+    /*line-height: 100px;*/    /*行の高さ*/
+    height: 90px;
+    line-height: 90px;
     border: 1px solid grey;    /*  margin-right: 2px; */
 }
 
