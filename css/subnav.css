@@ -1,0 +1,57 @@
+/*ここからサブナビ*/
+.sub-nav-bg {
+    /*サブナビに背景色つけている*/
+    width: 100%;
+    background-color: red;
+}
+
+.sub-nav {
+    max-width: 1000px;
+    margin: 0 auto;    /*中央に*/
+    height: 30px;
+    background-color: blue;
+    overflow: hidden;
+}
+
+.sub-list {
+    list-style-type: none;
+    display: flex;    /*リスト内を横並び*/
+    float: right;   /*右に寄せる*/
+    padding: 0;    /*リストの余白をリセット*/
+    margin: 0;    /*リストの余白をリセット*/
+}
+
+.sub-access {
+    display: block;    /*a要素をブロック化*/
+    width: 100px;
+    text-align: center;
+    background-color: grey;
+    height: 30px;
+    line-height: 30px;    /*行の高さ*/
+    border: 1px solid yellow;
+}
+
+.qa {
+    display: block;    /*a要素をブロック化*/
+    width: 100px;
+    text-align: center;
+    background-color: grey;
+    height: 30px;
+    line-height: 30px;    /*行の高さ*/
+    border: 1px solid yellow;
+}
+
+.translate {
+    display: block;    /*a要素をブロック化*/
+    width: 200px;
+    height: 30px;
+    background-image: url("../images/google_traanslate.jpg");
+}
+
+.search {
+    display: block;    /*a要素をブロック化*/
+    width: 200px;
+    height: 30px;
+    background-image: url("../images/google_search.jpg");
+}
+/*ここまで*/
