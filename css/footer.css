@@ -21,6 +21,8 @@
 
 .footer-address {
     margin-left: 20px;
+    font-size: 14px;
+    line-height: 5px;
 }
 
 .link-box {
@@ -30,8 +32,12 @@
 .link-list {
     list-style: none;
     margin : 0;
-    padding: 0 0 0 20px;
     float: left;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: #000;
 }
 
 .link-list-member {

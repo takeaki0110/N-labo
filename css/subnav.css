@@ -1,15 +1,13 @@
 /*ここからサブナビ*/
-.sub-nav-bg {
-    /*サブナビに背景色つけている*/
+.sub-nav-bg {    /*サブナビに背景色つけている*/
     width: 100%;
-    background-color: red;
+    background-color: grey;
 }
 
 .sub-nav {
     max-width: 1000px;
     margin: 0 auto;    /*中央に*/
     height: 30px;
-    background-color: blue;
     overflow: hidden;
 }
 
@@ -21,37 +19,36 @@
     margin: 0;    /*リストの余白をリセット*/
 }
 
-.sub-access {
+.sub-access, .qa {
     display: block;    /*a要素をブロック化*/
     width: 100px;
     text-align: center;
-    background-color: grey;
     height: 30px;
     line-height: 30px;    /*行の高さ*/
-    border: 1px solid yellow;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sub-access {
+    margin-right: -5px;
+
 }
 
 .qa {
+    margin-right: 10px;
+}
+
+.translate, .search {
     display: block;    /*a要素をブロック化*/
-    width: 100px;
-    text-align: center;
-    background-color: grey;
+    width: 200px;
     height: 30px;
-    line-height: 30px;    /*行の高さ*/
-    border: 1px solid yellow;
 }
 
 .translate {
-    display: block;    /*a要素をブロック化*/
-    width: 200px;
-    height: 30px;
-    background-image: url("../images/google_traanslate.jpg");
+        background-image: url("../images/google_traanslate.jpg");
 }
 
 .search {
-    display: block;    /*a要素をブロック化*/
-    width: 200px;
-    height: 30px;
     background-image: url("../images/google_search.jpg");
 }
 /*ここまで*/

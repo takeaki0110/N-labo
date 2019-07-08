@@ -1,7 +1,7 @@
 /*ここからメインナビ*/
 .main-nav-bg {    /*メインナビの背景色入れてるだけ*/
     width: 100%;
-    background-color: purple;
+    /*background-color: purple;*/
 }
 
 .main-nav {
@@ -10,54 +10,45 @@
 }
 
 .logo {
-    /*max-height: 100px;*/
-    /*max-width: 400px;*/
-    /*width: 40%;*/
     max-height: 90px;
     max-width: 310x;
     width: 31%;
     object-fit: contain;    /* 画像を縦横比を維持して縮小 */
-    background-color: grey;
-    display: block;
+    /*background-color: grey;*/
+    display: block; /*a要素をブロック化*/
     margin: 0;
     float: left;
 }
 
-ul {
+.main-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .main-list {
-    /*list-style: none;*/
     display: flex;    /*横並び*/
-    /*padding: 0;*/
-    /*margin: 0;*/
 }
 
 .main-list li {
-    /*width: 120px;*/
     width: 115px;
     text-align: center;
-    background-color: #333;
-    /*height: 100px;*/
-    /*line-height: 100px;*/    /*行の高さ*/
+    background-color: rgba(7,110,178,0.5);   /*ロゴの青い色に合わせて透過率半分に*/
     height: 90px;
     line-height: 90px;
-    border: 1px solid grey;
+    border: 1px solid grey; /*枠線付けてナビを一つ一つわかりやすく*/
     position: relative; /*サブメニューを動的に表示する位置の基準にしている*/
 }
 
 .main-list li a {
     display: block;
-    text-decoration: none;
-    color: #fff;
+    text-decoration: none;  /*下線消し*/
+    color: black;
     font-weight: bold;
 }
 
-.main-list li a:hover {    /*ナビのホバーとりあえず入れただけ*/
-    background-color: red;
+.main-list li:hover {    /*メインナビの親のホバー*/
+    background-color: rgba(7,110,178,1); /*ホバーされたら透過をなくす*/
 }
 
 .dropdwn_menu {
@@ -70,11 +61,14 @@ ul {
     width: 150px;   /*サブメニュー1項目の幅*/
     height: 50px;
     line-height: 50px;
-    font-weight: normal;    /*太字にはしない*/
-    background-color: blue;
+    background-color: rgba(34,142,65,0.5);     /*ロゴの緑の色に合わせて透過率半分に*/
 }
+.dropdwn_menu li a {
+    font-weight: normal;    /*太字にはしない*/
+}
+
 .dropdwn_menu li a:hover {
-    background-color: green;
+    background-color: rgba(34,142,65,1);     /*ホバーされたら透過をなしに*/
 }
 
 /*ここまで*/

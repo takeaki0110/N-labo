@@ -3,8 +3,23 @@
   width: 1000px;
   height: 500px;
   margin: 0 auto; /*中央寄せ*/
-  background-color: cyan;
+  background-color: #3AA0D4;
   text-align: center;
+}
+
+.thema p {
+  font-family: 游明朝;
+  font-size: 24px;
+  line-height: 10px;
+  padding-top: 10px;
+}
+
+.thema h2 {
+  font-family: HGP明朝B;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
 }
 
 .thema ul {
@@ -25,8 +40,20 @@
 }
 
 .thema li h3 {
-  color: red;
   text-align: center;
   margin-bottom: 10px;
+  font-family: 游明朝;
+  font-size: 24px;
+  line-height: 10px;
+  padding-bottom: 5px;
+}
+
+.thema a {
+  text-decoration: none;
+  color: blue;
+}
+
+.thema a:hover {
+  color: red;
 }
 /*ここまで*/

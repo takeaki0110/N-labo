@@ -1,12 +1,31 @@
 /*ここからアクセス*/
 .gl-access {
     text-align: center;
-    background-color: yellow;
+    background-color: #EFF9F9;
 }
 
 .access-text {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.access-text h3 {
+    font-size: 24px;
+}
+
+.access-text a {
+    text-decoration: none;
+    color: blue;
+    font-family: 游明朝;
+    font-size: 20px;
+}
+
+.access-text a:hover {
+    color: red;
+}
+
+.access-text p {
+    font-family: MS明朝;
 }
 
 /****Googleマップを縦横比固定でレスポンシブル化****/
