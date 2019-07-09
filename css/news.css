@@ -2,25 +2,65 @@
 .info {
   width: 1000px;
   height: 500px;
-  background-color: blue;
+  background-color: #E5FFFF;
   margin: 0 auto;
+}
+.info a {
+      text-decoration: none;
+      color: #000;
 }
 
 .news {
   width: 450px;
   height: 400px;
-  background-color: green;
+  background-color: #ffffef;;
   float: left;
+  overflow: hidden;
   margin-top: 50px;
-  text-align: center;
+  border:1px solid #000;
  }
-.twitter {
+.news h4{
+  text-align: center;
+  margin-top: 5px;
+}
+
+.news-list {
+  margin: 10px;
+}
+.news-list dl {
+  margin: 1px;
+}
+.news-list dl:nth-child(odd) {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.news-list dl:nth-child(even) {
+  /*background-color: #ffffef;*/
+}
+
+.news-list dt {
+  float: left;
+  clear: both ;
+}
+.news-list dd {
+  margin-left: 120px;
+}
+.news-list-all {
+  float: right;
+  margin-right: 5px;
+}
+.news-list-all a:hover {
+  color: blue;
+}
+
+.twitter-timeline {
   width: 450px;
   height: 400px;
-  background-color: yellow;
+  background-color: grey;
   float: right;
-  margin-top: 50px;
   text-align: center;
+  margin-top: 50px;
+  line-height: 450px;
 }
 
 /*ここまで*/
