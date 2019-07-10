@@ -1,0 +1,33 @@
+/*パンくずリストのCSS*/
+
+.breadcrumbs {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: grey;
+}
+
+.breadcrumbs ol {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.breadcrumbs li a{
+  text-decoration: none;
+}
+.breadcrumbs li::after{
+  content: '>';
+  display: inline-block;
+  padding: 0 10px; /*左右に余白*/
+}
+.breadcrumbs li:last-child::after{
+  display: none;
+}
+.breadcrumbs ol li:first-child::before {
+    padding: 0 5px 0 5px;
+    content: "\f015";
+    font-family: FontAwesome;
+}
+.breadcrumbs li a:hover {
+    color: red;
+}

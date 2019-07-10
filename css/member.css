@@ -3,22 +3,37 @@
     width: 1000px;
     height: 1000px;
     background-color: #3AA0D4;
+    /*background-color: rgba(28,160,212,0.8);*/
     margin: 0 auto;
     text-align: center;
 }
 
 .member-area h2 {
     padding-top: 30px;
-    margin-bottom: -10px;
+    /*margin-bottom: -10px;*/
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
 }
 .member-area h3 {
     padding-top: 30px;
-    margin-bottom: -5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+.member-area p {
+    margin: 0;  /*Pの余白を0に*/
+    /*padding: 0;*/
+}
+
+.proffesor-text {
+    font-size: 20px;
+    margin-bottom: -5px;    /*文字サイズ大きくした分余白をマイナスし写真の高さを合わせている*/
 }
 
 .labo-member {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .labo-frame {   /*表題＋写真*/
@@ -29,9 +44,11 @@
 .member-bg {    /*写真の枠*/
     width: 450px;
     height: 350px;
-    background-color: red;
+    /*background-color: red;*/
+    background-image: url("../images/pro3.jpg");
     position: relative; /*通常の表示位置を基準にした相対位置。画像を中央配置するのにこれも必要*/
-    border: 5px solid blue; /*外枠線つけてみた*/
+    border: 5px outset #D46D39; /*外枠線つけてみた*/
+    margin-top: 15px;
 }
 
 .member-bg img {
@@ -43,4 +60,5 @@
     left: 50%;  /*親要素の左から50％の位置に*/
     transform: translate(-50%,-50%);    /*ズレを補正*/
 }
+
 /*ここまで

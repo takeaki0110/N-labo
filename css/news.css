@@ -17,6 +17,7 @@
   float: left;
   overflow: hidden;
   margin-top: 50px;
+  margin-left: 25px;  /*左に隙間空けてみた*/
   border:1px solid #000;
  }
 .news h4{
@@ -28,7 +29,8 @@
   margin: 10px;
 }
 .news-list dl {
-  margin: 1px;
+  margin: 0;
+  padding: 5px;
 }
 .news-list dl:nth-child(odd) {
   border-top: 1px solid #000;
@@ -60,6 +62,7 @@
   float: right;
   text-align: center;
   margin-top: 50px;
+  margin-right: 25px; /*右に隙間空けてみた*/
   line-height: 450px;
 }
 

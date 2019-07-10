@@ -11,8 +11,18 @@
 
 .access-text h3 {
     font-size: 24px;
+    margin: 0;
+    padding-top: 50px;
 }
 
+.access-text p {
+    font-family: MS明朝;
+    /*margin: 0;*/
+}
+.access-text p:nth-of-type(2) {
+    margin: -20px 0 0 0;
+    color: blue;
+}
 .access-text a {
     text-decoration: none;
     color: blue;
@@ -24,9 +34,6 @@
     color: red;
 }
 
-.access-text p {
-    font-family: MS明朝;
-}
 
 /****Googleマップを縦横比固定でレスポンシブル化****/
 .gmap {

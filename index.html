@@ -32,6 +32,13 @@
 <!-- ここまで -->
 
 <!-- メインナビ部分 -->
+
+    <div class="main-visual">   <!-- ここからvideoタグまでをbody直下に置くと動画が背景全面にできる -->
+        <video src="movies/test.mp4" class="fitMovie" preload="metadata" autoplay loop muted>
+                <!--<source src="images/mainvisual.mp4">-->
+            <p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
+        </video>
+
     <div class="main-nav-bg">
         <div class="main-nav">
             <a href="#"><img class="logo" src="images/logo.png" alt=""></a>
@@ -97,16 +104,15 @@
 <!-- ここまで -->
 
 <!-- ここから動画 -->
-    <div class="main-visual">   <!-- ここからvideoタグまでをbody直下に置くと動画が背景全面にできる -->
-        <video src="movies/test.mp4" class="fitMovie" preload="metadata" autoplay loop muted>
-                <!--<source src="images/mainvisual.mp4">-->
-            <p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
-        </video>
 
-<!-- ここは文字表示 -->
+
+<!-- ここは動画前面の文字表示 -->
         <div class="main-visual__centered">
             <div class="main-visual__contents">
                 <h1 class="main-visual__title">Welcome to Nakaguchi Labo HP!</h1>
+                <div class="main-visual__text">
+                    <p>中口研究室ではコンピュータ画像処理技術を活用して診断支援・治療支援・生体計測に関する研究を行っています。</p>
+                </div>
             </div>
         </div>
     </div>
@@ -114,8 +120,6 @@
 
 <!-- 研究テーマ -->
 <div class="thema">
-    <p>中口研究室ではコンピュータ画像処理技術を活用して</p>
-    <p>診断支援・治療支援・生体計測に関する研究を行っています。</p>
     <h2>研究テーマ</h2>
         <div class="thema-contents">
             <ul>
@@ -164,16 +168,16 @@
     <div class="labo-member">
         <div class="labo-frame">
             <p>フロンティア医工学センター</p>
-            <p>教授　中口 俊哉</p>
+            <p><div class="proffesor-text">教授　中口 俊哉</div></p>
             <div class="member-bg"><img src="images/proffesor.jpg" alt=""></div>
         </div>
         <div class="labo-frame">
-            <p>研究室メンバー</p>
-            <p>（集合写真）</p>
+            <p>助教　吉村 裕一郎／秘書　原田 真弓</p>
+            <p>研究室メンバー（集合写真）</p>
             <div class="member-bg"><img src="images/member.jpg" alt=""></div>
         </div>
     </div>
-    <h3>研究室内イベントの一コマ</h3>
+    <h3>研究室内イベントのひとコマ</h3>
     <div class="labo-member">
         <div class="labo-frame">
             <p>生体医工学会2019番外編 6/6～6/8</p>
@@ -198,7 +202,7 @@
     <div class="access-text">
     <p>医工学コース３年生の皆さん，他大学から大学院入学を希望する皆さん，医工学研究に関心のある企業の方々へ
     研究室見学，研究相談は随時受け付けています。</p>
-    <p>お問い合わせは<a href="#">こちら</a></p>
+    <p class="access-qa">お問い合わせは<a href="#">こちら</a></p>
     </div>
 </div>
 <!-- ここまで -->
@@ -240,7 +244,6 @@
     <small>Copyrightエリア</small>
 </div>
     <!-- ここまで -->
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/movie.js"></script>

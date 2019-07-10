@@ -1,3 +1,10 @@
+body {
+  /*background-color: grey;*/
+}
+h1,h2,h3,h4{
+  margin: 0;
+}
+
 /*ここからサブナビ*/
 .sub-nav-bg {    /*サブナビに背景色つけている*/
     width: 100%;
@@ -51,12 +58,17 @@
 .search {
     background-image: url("../images/google_search.jpg");
 }
+
+.sub-list a:hover{
+  color: red;
+}
+
 /*ここまで*/
 
 /*ここからメインナビ*/
 .main-nav-bg {    /*メインナビの背景色入れてるだけ*/
     width: 100%;
-    background-color: white;
+    /*background-color: rgba(128,128,128,0.5);*/
 }
 
 .main-nav {
@@ -69,7 +81,7 @@
     max-width: 310x;
     width: 31%;
     object-fit: contain;    /* 画像を縦横比を維持して縮小 */
-    background-color: #E5FFFF;
+    background-color: rgba(229,255,255,0.3);
     display: block; /*a要素をブロック化*/
     margin: 0;
     float: left;
@@ -91,14 +103,13 @@
     background-color: rgba(7,110,178,0.5);   /*ロゴの青い色に合わせて透過率半分に*/
     height: 90px;
     line-height: 90px;
-    border: 1px solid grey; /*枠線付けてナビを一つ一つわかりやすく*/
     position: relative; /*サブメニューを動的に表示する位置の基準にしている*/
 }
 
 .main-list li a {
     display: block;
     text-decoration: none;  /*下線消し*/
-    color: black;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -160,7 +171,11 @@
     font-size: 60px;
     font-weight: bold;
     text-shadow: 2px 2px 2px #000;
-
+}
+.main-visual__text {
+  color: #fff;
+  font-size: 24px;
+  text-shadow: 1px 1px 1px #000;
 }
 /*ここまで*/
 
@@ -176,8 +191,8 @@
 .thema p {
   font-family: 游明朝;
   font-size: 24px;
-  line-height: 10px;
-  padding-top: 10px;
+  /*line-height: 10px;*/
+  padding-top: 30px;
 }
 
 .thema h2 {
@@ -186,6 +201,9 @@
   font-weight: bold;
   color: #fff;
   text-shadow: 1px 1px 1px black;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 .thema ul {
@@ -210,8 +228,8 @@
   margin-bottom: 10px;
   font-family: 游明朝;
   font-size: 24px;
-  line-height: 10px;
-  padding-bottom: 5px;
+  line-height: 24px;
+  padding-bottom: 5px; /*画像との空き*/
 }
 
 .thema a {
@@ -223,7 +241,6 @@
   color: red;
 }
 /*ここまで*/
-
 
 /*ここからニュース・Twitter*/
 .info {
@@ -244,6 +261,7 @@
   float: left;
   overflow: hidden;
   margin-top: 50px;
+  margin-left: 25px;  /*左に隙間空けてみた*/
   border:1px solid #000;
  }
 .news h4{
@@ -255,7 +273,8 @@
   margin: 10px;
 }
 .news-list dl {
-  margin: 1px;
+  margin: 0;
+  padding: 5px;
 }
 .news-list dl:nth-child(odd) {
   border-top: 1px solid #000;
@@ -287,32 +306,47 @@
   float: right;
   text-align: center;
   margin-top: 50px;
+  margin-right: 25px; /*右に隙間空けてみた*/
   line-height: 450px;
 }
 
 /*ここまで*/
-
 /*ここからメンバーエリア*/
 .member-area {
     width: 1000px;
     height: 1000px;
     background-color: #3AA0D4;
+    /*background-color: rgba(28,160,212,0.8);*/
     margin: 0 auto;
     text-align: center;
 }
 
 .member-area h2 {
     padding-top: 30px;
-    margin-bottom: -10px;
+    /*margin-bottom: -10px;*/
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
 }
 .member-area h3 {
     padding-top: 30px;
-    margin-bottom: -5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+.member-area p {
+    margin: 0;  /*Pの余白を0に*/
+    /*padding: 0;*/
+}
+
+.proffesor-text {
+    font-size: 20px;
+    margin-bottom: -5px;    /*文字サイズ大きくした分余白をマイナスし写真の高さを合わせている*/
 }
 
 .labo-member {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .labo-frame {   /*表題＋写真*/
@@ -323,9 +357,11 @@
 .member-bg {    /*写真の枠*/
     width: 450px;
     height: 350px;
-    background-color: red;
+    /*background-color: red;*/
+    background-image: url("../images/pro3.jpg");
     position: relative; /*通常の表示位置を基準にした相対位置。画像を中央配置するのにこれも必要*/
-    border: 5px solid blue; /*外枠線つけてみた*/
+    border: 5px outset #D46D39; /*外枠線つけてみた*/
+    margin-top: 15px;
 }
 
 .member-bg img {
@@ -337,6 +373,7 @@
     left: 50%;  /*親要素の左から50％の位置に*/
     transform: translate(-50%,-50%);    /*ズレを補正*/
 }
+
 /*ここまで
 
 /*ここからアクセス*/
@@ -353,7 +390,13 @@
 .access-text h3 {
     font-size: 24px;
 }
-
+.access-qa {  /*アクセスのお問い合わせのPの邪魔な余白を取っている*/
+  /*margin: 0;*/
+}
+.access-text p {  /*地図下の文字　後で調整*/
+  margin: 5px 0;  /*上下隙間空けてみた*/
+  line-height: 24px;  /*行高を24にしてみた*/
+}
 .access-text a {
     text-decoration: none;
     color: blue;
@@ -388,7 +431,7 @@
 
 /*ここからフッター*/
 .gl-footer {
-    width: 1000px;
+    width: 100%;
     height: 170px;
     background-color: #076eb2;
     margin: 0 auto;
@@ -433,7 +476,7 @@
 }
 
 .copyright {
-    width: 1000px;
+    width: 100%;
     height: 30px;
     background-color: #076eb2;
     margin: 0 auto;
