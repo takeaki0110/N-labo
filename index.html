@@ -8,16 +8,17 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/sanitize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/arrow.css">
+    <link rel="stylesheet" href="css/top-back.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
-
+    <div id="page_top"><a href="#"></a></div>   <!-- 上へ戻るボタン -->
 <!-- サブナビ部分 -->
     <div class="sub-nav-bg">
         <div class="sub-nav">
@@ -31,14 +32,15 @@
     </div>
 <!-- ここまで -->
 
-<!-- メインナビ部分 -->
-
+<!-- ここから動画 -->
     <div class="main-visual">   <!-- ここからvideoタグまでをbody直下に置くと動画が背景全面にできる -->
         <video src="movies/test.mp4" class="fitMovie" preload="metadata" autoplay loop muted>
                 <!--<source src="images/mainvisual.mp4">-->
             <p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
         </video>
+<!-- ここまで -->
 
+<!-- メインナビ部分 -->
     <div class="main-nav-bg">
         <div class="main-nav">
             <a href="#"><img class="logo" src="images/logo.png" alt=""></a>
@@ -103,9 +105,6 @@
     </div>
 <!-- ここまで -->
 
-<!-- ここから動画 -->
-
-
 <!-- ここは動画前面の文字表示 -->
         <div class="main-visual__centered">
             <div class="main-visual__contents">
@@ -117,8 +116,9 @@
             </div>
         </div>
     </div>
-<!-- 動画はここまで -->
+<!-- 動画・ファーストビューはここまで -->
 
+<div class="contents-bg">
 <!-- 研究テーマ -->
 <div class="thema">
     <h2>研究テーマ</h2>
@@ -191,6 +191,8 @@
     </div>
 </div>
 <!-- ここまで -->
+</div>
+
 <!-- ここからアクセス -->
 <div class="gl-access">
     <div class="access-text1">
@@ -251,6 +253,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/movie.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/top-back.js"></script>
     <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
     <!-- <script src="js/holder.min.js"></script> -->
 </body>

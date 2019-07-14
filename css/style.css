@@ -1,8 +1,11 @@
 body {
-  /*background-color: grey;*/
 }
 h1,h2,h3,h4{
   margin: 0;
+}
+.contents-bg {
+  width: 100%;
+  background-image:  url("../images/pro1.jpg");
 }
 
 /*ここからサブナビ*/
@@ -100,10 +103,11 @@ h1,h2,h3,h4{
 .main-list li {
     width: 115px;
     text-align: center;
-    background-color: rgba(7,110,178,0.5);   /*ロゴの青い色に合わせて透過率半分に*/
+    background-color: rgba(7,110,178,0.3);   /*ロゴの青い色に合わせて透過率半分に*/
     height: 90px;
     line-height: 90px;
     position: relative; /*サブメニューを動的に表示する位置の基準にしている*/
+    z-index: 1; /*動画の文字部分より前面に*/
 }
 
 .main-list li a {
@@ -127,7 +131,7 @@ h1,h2,h3,h4{
     width: 150px;   /*サブメニュー1項目の幅*/
     height: 50px;
     line-height: 50px;
-    background-color: rgba(34,142,65,0.5);     /*ロゴの緑の色に合わせて透過率半分に*/
+    background-color: rgba(34,142,65,0.3);     /*ロゴの緑の色に合わせて透過率半分に*/
 }
 .dropdwn_menu li a {
     font-weight: normal;    /*太字にはしない*/
@@ -146,7 +150,7 @@ h1,h2,h3,h4{
     position: relative;
 }
 .main-visual video {
-    z-index: -1;    /*動画を背景動画として表示 動画の位置を変えるときのため一応入れてある*/
+    z-index: -2;    /*動画を背景動画として表示*/
 }
 
 .fitMovie{
@@ -164,6 +168,7 @@ h1,h2,h3,h4{
 .main-visual__contents {
     text-align: center;
     transform: translate(-50%,-50%);
+    z-index: -1;
 }
 
 .main-visual__title {
@@ -184,17 +189,10 @@ h1,h2,h3,h4{
 /*ここから研究テーマ*/
 .thema {
   width: 1000px;
-  height: 500px;
+  height: 600px;
   margin: 0 auto; /*中央寄せ*/
   background-color: #3AA0D4;
   text-align: center;
-}
-
-.thema p {
-  font-family: 游明朝;
-  font-size: 24px;
-  /*line-height: 10px;*/
-  padding-top: 30px;
 }
 
 .thema h2 {
@@ -204,8 +202,8 @@ h1,h2,h3,h4{
   color: #fff;
   text-shadow: 1px 1px 1px black;
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .thema ul {
@@ -214,6 +212,15 @@ h1,h2,h3,h4{
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.thema li h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 游明朝;
+  font-size: 24px;
+  line-height: 10px;
+  padding-bottom: 30px;
 }
 
 .thema li a img {
@@ -226,13 +233,12 @@ h1,h2,h3,h4{
   object-fit: cover;
 }
 
-.thema li h3 {
-  text-align: center;
-  margin-bottom: 10px;
+
+.thema p {
   font-family: 游明朝;
   font-size: 24px;
-  line-height: 10px;
-  padding-bottom: 15px;
+  /*line-height: 10px;*/
+  padding-top: 30px;
 }
 
 .thema a {
@@ -332,8 +338,8 @@ h1,h2,h3,h4{
 }
 .member-area h3 {
     padding-top: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
 }
@@ -399,6 +405,7 @@ h1,h2,h3,h4{
   padding-bottom: 20px;
 }
 .access-text2 p {  /*地図下の文字*/
+  padding-top: 30px;  /*地図との空きを作っている*/
   line-height: 24px;  /*行高を24にしてみた*/
 }
 .access-text2 a {
@@ -415,7 +422,7 @@ h1,h2,h3,h4{
 }
 .access-qa {
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 50px;/*お問い合わせのフッターの間を空けている*/
 }
 
 /****Googleマップを縦横比固定でレスポンシブル化****/
