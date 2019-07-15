@@ -1,0 +1,37 @@
+h1,h2,h3,h4{
+  margin: 0;
+}
+
+/*ここからコンテンツ*/
+.page-header-bg {
+    width: 100%;
+    height: 250px;
+    background-image: url("../images/6.png");   /*ここの背景画像は後で変える*/
+    background-size: contain;
+}
+.page-header-bg h1 {
+    text-align: center;
+    line-height: 250px;
+    text-shadow: 1px 1px 1px #fff;
+    color: #000;
+    font-family: 游明朝;
+}
+.page-header-bg-mask {
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+}
+
+.thema-title {
+    width: 100%;
+    height: 100px;
+    background-color: #3AA0D4;
+}
+
+.thema-title h2 {
+    text-align: center;
+    line-height: 100px;
+    font-family: 游明朝;
+}
+
+
+/*ここまで*/

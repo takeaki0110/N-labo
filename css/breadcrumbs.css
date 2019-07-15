@@ -3,7 +3,7 @@
 .breadcrumbs {
     max-width: 1000px;
     margin: 0 auto;
-    background-color: grey;
+    background-color: grey; /*わかりやすいようとりあえず背景色入れてある*/
 }
 
 .breadcrumbs ol {
@@ -12,8 +12,10 @@
     padding: 0;
     margin: 0;
 }
+
 .breadcrumbs li a{
   text-decoration: none;
+  color: #000;
 }
 .breadcrumbs li::after{
   content: '>';
