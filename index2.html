@@ -8,7 +8,8 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/sanitize.css">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 768px)">
     <link rel="stylesheet" href="css/arrow.css">
     <link rel="stylesheet" href="css/top-back.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
@@ -20,16 +21,18 @@
 <body>
     <div id="page_top"><a href="#"></a></div>   <!-- 上へ戻るボタン -->
 <!-- サブナビ部分 -->
+<!--
     <div class="sub-nav-bg">
         <div class="sub-nav">
             <ul class="sub-list">
-                <li><a href="#" class="sub-access">アクセス</a></li>
-                <li><a href="#" class="qa">お問い合わせ</a></li>
-                <li><a href="#" class="translate"></a></li>
-                <li><a href="#" class="search"></a></li>
+                <li><a href="#" class="sub-nav-access">アクセス</a></li>
+                <li><a href="#" class="sub-nav-qa">お問い合わせ</a></li>
+                <li class="sub-nav-translate"></li>
+                <li class="sub-nav-search"></li>
             </ul>
         </div>
     </div>
+ -->
 <!-- ここまで -->
 
 <!-- ここから動画 -->
@@ -42,8 +45,8 @@
 
 <!-- メインナビ部分 -->
     <div class="main-nav-bg">
-        <div class="main-nav">
-            <a href="#"><img class="logo" src="images/logo.png" alt=""></a>
+        <div class="main-nav clearfix">
+            <!-- <a href="#"><img class="logo" src="images/logo.png" alt=""></a> -->
             <ul class="main-list">
                 <li>
                     <a href="#" class="nav1">ニュース</a>
@@ -120,133 +123,136 @@
 
 <div class="contents-bg">
 <!-- 研究テーマ -->
-<div class="thema">
-    <h2>研究テーマ</h2>
-        <div class="thema-contents">
-            <ul>
-                <li><h3>治療支援</h3><a href="#"><img src="images/thema1.jpg" alt=""></a></li>
-                <li><h3>医療訓練システム</h3><a href="#"><img src="images/thema2.jpg" alt=""></a></li>
-                <li><h3>舌画像の計測・解析</h3><a href="#"><img src="images/thema3.jpg" alt=""></a></li>
-                <li><h3>画像診断支援</h3><a href="#"><img src="images/thema4.jpg" alt=""></a></li>
-            </ul>
-        </div>
-        <p>研究業績・学会発表等の詳細が知りたい方は<a href="#">こちら</a>へ</p>
-</div>
+    <div class="thema">
+        <h2>研究テーマ</h2>
+            <div class="thema-contents">
+                <ul>
+                    <li><h3>治療支援</h3><a href="#"><img src="images/thema1.jpg" alt=""></a></li>
+                    <li><h3>医療訓練システム</h3><a href="#"><img src="images/thema2.jpg" alt=""></a></li>
+                    <li><h3>舌画像の計測・解析</h3><a href="#"><img src="images/thema3.jpg" alt=""></a></li>
+                    <li><h3>画像診断支援</h3><a href="#"><img src="images/thema4.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <p>研究業績・学会発表等の詳細が知りたい方は<a href="#">こちら</a>へ</p>
+    </div>
 <!-- ここまで -->
 
 <!-- ここからニュース・Twitter -->
-<div class="info">
-    <div class="news">
-        <h4>最近のニュース</h4>
-        <div class="news-list">
-                <dl>
-                    <dt>2019.6.7</dt>
-                    <dd><a href="#">M2 篠崎真良君，M1 関口陽太君が沖縄コンベンションセンターで開催した第58回日本生体医工学会大会にて発表を行いました．</a></dd>
-                </dl>
-                <dl>
-                    <dt>2019.5.31</dt>
-                    <dd><a href="#">当研究室が開発した拡張現実型聴診トレーニングシステムEARSが，医学雑誌Hospitalistに掲載されました．</a></dd>
-                </dl>
-                <dl>
-                    <dt>2019.05.30</dt>
-                    <dd><a href="#">中口，吉村が鄭州大学第5付属病院を訪問し，"Augmented Reality for Medical Applications"というタイトルで講演しました．</a></dd>
-                </dl>
+    <div class="info">
+        <div class="news">
+            <h4>最近のニュース</h4>
+            <div class="news-list">
+                    <dl>
+                        <dt>2019.6.7</dt>
+                        <dd><a href="#">M2 篠崎真良君，M1 関口陽太君が沖縄コンベンションセンターで開催した第58回日本生体医工学会大会にて発表を行いました．</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>2019.5.31</dt>
+                        <dd><a href="#">当研究室が開発した拡張現実型聴診トレーニングシステムEARSが，医学雑誌Hospitalistに掲載されました．</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>2019.5.30</dt>
+                        <dd><a href="#">中口，吉村が鄭州大学第5付属病院を訪問し，"Augmented Reality for Medical Applications"というタイトルで講演しました．</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>2019.5.18</dt>
+                        <dd><a href="#">中口が横浜で開催された第2回医用VRセミナー「医学及び看護教育へのVR技術応用」において，「拡張模擬患者を実現するARシミュレータ」について講演しました．</a></dd>
+                    </dl>            </div>
+            <div class="news-list-all">
+                <a href="#">一覧を見る</a>
+            </div>
         </div>
-        <div class="news-list-all">
-            <a href="#">一覧を見る</a>
+        <div class="twitter-timeline">
+            ここはTwitterのタイムラインを表示
         </div>
     </div>
-    <div class="twitter-timeline">
-        ここはTwitterのタイムラインを表示
-    </div>
-</div>
 <!-- ここまで -->
 
-<!-- ここまで -->
 <!-- ここからメンバーエリア -->
-<div class="member-area">
-    <h2>研究室メンバー</h2>
-    <div class="labo-member">
-        <div class="labo-frame">
-            <p>フロンティア医工学センター</p>
-            <p><div class="proffesor-text">教授　中口 俊哉</div></p>
-            <div class="member-bg"><img src="images/proffesor.jpg" alt=""></div>
+    <div class="member-area">
+        <h2>研究室メンバー</h2>
+        <div class="labo-member">
+            <div class="labo-frame">
+                <p>フロンティア医工学センター</p>
+                <p><div class="proffesor-text">教授　中口 俊哉</div></p>
+                <div class="member-bg"><img src="images/proffesor.jpg" alt=""></div>
+            </div>
+            <div class="labo-frame">
+                <p>助教　吉村 裕一郎／秘書　原田 真弓</p>
+                <p>研究室メンバー（集合写真）</p>
+                <div class="member-bg"><img src="images/member.jpg" alt=""></div>
+            </div>
         </div>
-        <div class="labo-frame">
-            <p>助教　吉村 裕一郎／秘書　原田 真弓</p>
-            <p>研究室メンバー（集合写真）</p>
-            <div class="member-bg"><img src="images/member.jpg" alt=""></div>
+        <h3>研究室内イベントのひとコマ</h3>
+        <div class="labo-member">
+            <div class="labo-frame">
+                <p>生体医工学会2019番外編 6/6～6/8</p>
+                <div class="member-bg"><img src="images/event1.jpg" alt=""></div>
+            </div>
+            <div class="labo-frame">
+                 <p>追いコン2019</p>
+                <div class="member-bg"><img src="images/event2.jpg" alt=""></div>
+            </div>
         </div>
     </div>
-    <h3>研究室内イベントのひとコマ</h3>
-    <div class="labo-member">
-        <div class="labo-frame">
-            <p>生体医工学会2019番外編 6/6～6/8</p>
-            <div class="member-bg"><img src="images/event1.jpg" alt=""></div>
-        </div>
-        <div class="labo-frame">
-             <p>追いコン2019</p>
-            <div class="member-bg"><img src="images/event2.jpg" alt=""></div>
-        </div>
-    </div>
-</div>
 <!-- ここまで -->
-</div>
+</div><!-- contents-bg -->
 
 <!-- ここからアクセス -->
 <div class="gl-access">
-    <div class="access-text1">
-    <h3>アクセス</h3>
-    <p>千葉大学 西千葉キャンパス　フロンティア医工学センター(CFME) A棟 2階：JR西千葉駅から徒歩約8分</p>
+    <div class="access-text">
+        <h3>アクセス</h3>
+        <p>千葉大学 西千葉キャンパス　フロンティア医工学センター(CFME) A棟 2階：JR西千葉駅から徒歩約8分</p>
     </div>
     <div class="gmap">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.013510393066!2d140.1026320504949!3d35.627393440433686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8b06a938b3729aa!2z5Y2D6JGJ5aSn5a2mIOODleODreODs-ODhuOCo-OCouWMu-W3peWtpuOCu-ODs-OCv-ODvA!5e0!3m2!1sja!2sjp!4v1562307193136!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-    <div class="access-text2">
-    <p>医工学コース３年生の皆さん，他大学から大学院入学を希望する皆さん，医工学研究に関心のある企業の方々へ
-    研究室見学，研究相談は随時受け付けています。</p>
-    <p class="access-qa">お問い合わせは<a href="#">こちら</a></p>
+    <div class="access-text">
+        <p>医工学コース3年生の皆さん，他大学から大学院入学を希望する皆さん，医工学研究に関心のある企業の方々へ
+        研究室見学，研究相談は随時受け付けています。</p>
+        <p class="access-qa">お問い合わせは<a href="#">こちら</a></p>
     </div>
 </div>
 <!-- ここまで -->
+
 <!-- ここからフッター -->
 <div class="gl-footer-bg">
-<div class="gl-footer">
-    <div class="logo-address">
-        <div><a href="#"><img class="footer-logo" src="images/footer-logo.png" alt="small-logo"></a></div>
-        <div class="footer-address">
-            <p>千葉大学フロンティア医工学センター　中口研究室</p>
-            <p>住所：〒263-8522 千葉市稲毛区弥生町1-33</p>
-            <p>電話/Fax： 043-290-3296（直通）</p>
-            <p>E-mail：nakaguchi の後に @faculty.chiba-u.jp を付けてください。</p>
+    <div class="gl-footer">
+        <div class="logo-address">
+            <div><a href="#"><img class="footer-logo" src="images/footer-logo.png" alt="small-logo"></a></div>
+            <div class="footer-address">
+                <p>千葉大学フロンティア医工学センター　中口研究室</p>
+                <p>住所：〒263-8522 千葉市稲毛区弥生町1-33</p>
+                <p>電話/Fax： 043-290-3296（直通）</p>
+                <p>E-mail：nakaguchi の後に @faculty.chiba-u.jp を付けてください。</p>
+            </div>
+        </div>
+        <div class="link-box">
+            <ul class="link-list">
+                <li><a href="#">ニュース</a></li>
+                <li><a href="#">研究テーマ</a></li>
+                <li><a href="#">業績</a></li>
+                <li><a href="#">セミナー</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+            <ul class="link-list">
+                <li><a href="#">イベント</a></li>
+                <li><a href="#">メンバー</a></li>
+                <li><a href="#">アクセス</a></li>
+                <li><a href="#">リンク</a></li>
+            </ul>
+            <ul  class="link-list">
+                <li>研究室メンバー用</li>
+                <li class="link-list-member"><a href="#">蔵書DB</a></li>
+                <li class="link-list-member"><a href="#">Git</a></li>
+                <li class="link-list-member"><a href="#">Module</a></li>
+                <li class="link-list-member"><a href="#">Slack</a></li>
+            </ul>
         </div>
     </div>
-    <div class="link-box">
-        <ul class="link-list">
-            <li><a href="#">ニュース</a></li>
-            <li><a href="#">研究テーマ</a></li>
-            <li><a href="#">業績</a></li>
-            <li><a href="#">セミナー</a></li>
-            <li><a href="#">お問い合わせ</a></li>
-        </ul>
-        <ul class="link-list">
-            <li><a href="#">イベント</a></li>
-            <li><a href="#">メンバー</a></li>
-            <li><a href="#">アクセス</a></li>
-            <li><a href="#">リンク</a></li>
-        </ul>
-        <ul  class="link-list">
-            <li>研究室メンバー用</li>
-            <li class="link-list-member"><a href="#">蔵書DB</a></li>
-            <li class="link-list-member"><a href="#">Git</a></li>
-            <li class="link-list-member"><a href="#">Module</a></li>
-            <li class="link-list-member"><a href="#">Slack</a></li>
-        </ul>
+    <div class="copyright">
+        <small>&copy; 2019 Nakaguchi Labo</small>
     </div>
-</div>
-<div class="copyright">
-    <small>Copyright</small>
-</div>
 </div>
     <!-- ここまで -->
 
