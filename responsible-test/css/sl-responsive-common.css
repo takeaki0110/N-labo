@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+/*********************
+スマホ用のスタイルを定義
+*********************/
+body{
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif, "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+}
+
+footer * p, .sub-nav p, .main-nav p {
+  margin: 0;
+}
+footer * h1,h2,h3,h4,h5, .sub-nav h1,h2,h3,h4,h5 .main-nav h1,h2,h3,h4,h5 {
+  margin: 0;
+}
+footer * ul, li, .sub-nav ul, li, .main-nav ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+footer * a, .sub-nav a, .main-nav a {
+  text-decoration: none;
+}
+
+.sub-nav, .main-nav { /*各コンテンツの横幅を設定し中央に配置*/
+  /*max-width: 1000px;*/
+  margin: 0 auto;
+}
+.gl-footer, .copyright { /*各コンテンツの横幅を設定し中央に配置*/
+  /*width: 1000px;*/
+  margin: 0 auto;
+}
+
+
+/*-------------------
+サブナビ
+-------------------*/
+.sub-nav-bg {    /*サブナビに背景色つけている*/
+    width: 100%;
+    background-color: grey;
+    display: none;
+}
+.sub-nav {
+    height: 30px;
+    overflow: hidden;
+}
+.sub-list {
+    display: flex;    /*リスト内を横並び*/
+    float: right;   /*右に寄せる*/
+}
+.sub-nav-access, .sub-nav-qa {
+    display: block;    /*a要素をブロック化*/
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;    /*行の高さ*/
+    color: #fff;
+}
+.sub-nav-access {
+    margin-right: -5px;
+}
+.sub-nav-qa {
+    margin-right: 10px;
+}
+.sub-nav-translate, .sub-nav-search {
+    display: block;    /*a要素をブロック化*/
+    width: 200px;
+    height: 30px;
+}
+.sub-nav-translate {
+    background-image: url("../images/google_traanslate.jpg");
+}
+.sub-nav-search {
+    background-image: url("../images/google_search.jpg");
+}
+.sub-list a:hover{
+  color: #B30718;
+}
+
+/*-------------------
+メインナビ
+-------------------*/
+.clearfix::after {
+    content : " ";
+    display : block;
+    clear : both;
+}
+.logo {
+    display: none; /*非表示に*/
+}
+
+/*********************
+slicknavにロゴ表示
+**********************/
+.slicknav_menu h1 {
+  float: left;
+  margin: 0;
+  padding: 10px 30px 10px 20px;
+  text-indent: -9999px;
+  background-image: url(../images/mobile-header-logo.png);
+  background-size: cover;
+}
+.slicknav_menu h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+.slicknav_menu h1 a {
+  display: block;
+}
+/**********************
+タイトルイメージ部
+**********************/
+.page-header-bg {
+    width: 100%;
+    height: 250px;
+    background-image: url("../images/pro100.jpg");
+    background-size: contain;
+}
+.page-header-bg h1 {
+    text-align: center;
+    line-height: 250px;
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+    font-family: 游明朝;
+    font-size: 50px;
+}
+.page-header-bg-mask {
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------
+フッター
+-------------------*/
+.gl-footer-bg {
+  width: 100%;
+  background-color: #076eb2;
+}
+.gl-footer {
+/*     height: 170px; */
+    /*display: flex;*/  /*横並び*/
+    /*align-items: center;*/    /*上下中央*/
+  padding-top: 30px;
+}
+.logo-address {
+    display: flex;
+    align-items: center;
+}
+.footer-logo {
+    width: 40px;
+    height: 80px;
+    object-fit: contain;
+    margin-left: 5px;
+}
+.footer-address {
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 14px;
+}
+.link-box {
+    overflow: hidden;
+  padding-top:10px;
+}
+.link-list {
+    float: left;
+/*     overflow: hidden; */
+}
+.link-list li {
+  margin-left: 20px;
+  font-size: 14px;
+  float: left;
+}
+.link-list a {
+    color: #000;
+}
+.link-list-member {
+    font-size: 14px;
+}
+.copyright {
+    height: 30px;
+    text-align: center;
+  margin-top:50px
+}
+
+/*******************
+slicknavの表示設定
+*******************/
+.slicknav_menu {
+  display:none;
+}
+
+@media screen and (max-width: 768px) {
+  #menu {
+   display:none;
+  }
+
+  .slicknav_menu {
+   display:block;
+  }
+}

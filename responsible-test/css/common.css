@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/*********************
+第2階層のヘッダー・フッターのスタイルを定義
+*********************/
+body{
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif, "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+}
+
+.gl-footer .sub-nav .main-nav {
+  font-size: 16px;
+}
+.gl-footer * p, .sub-nav p, .main-nav p {
+  margin: 0;
+  /*font-size: 1.6rem;*/
+}
+.gl-footer * h1,h2,h3,h4,h5, .sub-nav h1,h2,h3,h4,h5 .main-nav h1,h2,h3,h4,h5 {
+  margin: 0;
+}
+.gl-footer * ul, li, .sub-nav ul, li, .main-nav ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.gl-footer * a, .sub-nav a, .main-nav a {
+  text-decoration: none;
+}
+
+.sub-nav, .main-nav { /*各コンテンツの横幅を設定し中央に配置*/
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.gl-footer, .copyright { /*各コンテンツの横幅を設定し中央に配置*/
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*-------------------
+サブナビ
+-------------------*/
+.sub-nav-bg {    /*サブナビに背景色つけている*/
+    width: 100%;
+    background-color: grey;
+    display: block;
+}
+.sub-nav {
+    height: 30px;
+    overflow: hidden;
+}
+.sub-list {
+    display: flex;    /*リスト内を横並び*/
+    float: right;   /*右に寄せる*/
+}
+.sub-nav-access, .sub-nav-qa {
+    display: block;    /*a要素をブロック化*/
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;    /*行の高さ*/
+    color: #fff;
+}
+.sub-nav-access {
+    margin-right: -5px;
+}
+.sub-nav-qa {
+    margin-right: 10px;
+}
+.sub-nav-translate, .sub-nav-search {
+    display: block;    /*a要素をブロック化*/
+    width: 200px;
+    height: 30px;
+}
+.sub-nav-translate {
+    background-image: url("../images/google_traanslate.jpg");
+}
+.sub-nav-search {
+    background-image: url("../images/google_search.jpg");
+}
+.sub-list a:hover{
+  color: #B30718;
+}
+
+/*-------------------
+メインナビ
+-------------------*/
+.main-nav-bg {
+  width: 100%;
+  background-color: grey;
+}
+.clearfix::after {
+    content : " ";
+    display : block;
+    clear : both;
+}
+.logo {
+    max-height: 90px;
+    width: 31%;
+    object-fit: contain;    /* 画像を縦横比を維持して縮小 */
+    background-color: rgba(229,255,255,0.3);
+    display: block; /*ブロック化*/
+    float: left;
+}
+.main-list {
+    display: flex;    /*横並び*/
+}
+.main-list li {
+    width: 20%;
+    text-align: center;
+    background-color: rgba(7,110,178,0.3);   /*ロゴの青い色に合わせて透過率半分に*/
+    height: 90px;
+    line-height: 90px;
+    position: relative; /*サブメニューを動的に表示する位置の基準にしている*/
+    z-index: 1; /*動画の文字部分より前面に*/
+}
+.main-list li a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+}
+.main-list li:hover {    /*メインナビの親のホバー*/
+    background-color: rgba(7,110,178,1); /*ホバーされたら透過をなくす*/
+}
+
+/**********************
+タイトルイメージ部
+**********************/
+.page-header-bg {
+    width: 100%;
+    height: 250px;
+    background-image: url("../images/pro100.jpg");
+    background-size: contain;
+}
+.page-header-bg h1 {
+    text-align: center;
+    line-height: 250px;
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+    font-family: 游明朝;
+    font-size: 50px;
+}
+.page-header-bg-mask {
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+}
+
+/*-------------------
+フッター
+-------------------*/
+.gl-footer-bg {
+  width: 100%;
+  background-color: #076eb2;
+}
+.gl-footer {
+    height: 170px;
+    display: flex;  /*横並び*/
+    align-items: center;    /*上下中央*/
+    padding-top: 0px;
+}
+.logo-address {
+    display: flex;
+    align-items: center;
+}
+.footer-logo {
+    max-width: 80px;
+    max-height: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width:1000px) {
+  .footer-address {
+      margin-left: 10px;
+      font-size: 10px;
+      line-height: 14px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer-address {
+      margin-left: 20px;
+      font-size: 14px;
+      line-height: 14px;
+  }
+}
+
+.link-box {
+    overflow: hidden;
+    padding-top: 0px;
+}
+.link-list {
+    float: left;
+}
+
+@media screen and (min-width: 768px) and (max-width:1000px) {
+  .link-list li {
+    margin-left: 10px;
+    font-size: 15px;
+    float: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+    .link-list li {
+    margin-left: 40px;
+    font-size: 16px;
+    float: none;
+  }
+}
+
+.link-list a {
+    color: #000;
+}
+.link-list-member {
+    font-size: 14px;
+}
+.copyright {
+    height: 30px;
+    text-align: center;
+    font-size:16px;
+}
+
+/*******************
+slicknavの表示設定
+*******************/
+.slicknav_menu {
+ display:none;
+}
+
+@media screen and (max-width: 767px) {
+#menu {
+ display:none;
+}
+
+.slicknav_menu {
+ display:block;
+}
+}

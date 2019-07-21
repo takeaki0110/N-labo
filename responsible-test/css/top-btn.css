@@ -1,0 +1,61 @@
+/*パソコン・スマホ共通のCSS*/
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;  /*ボタンの配置場所を固定*/
+  right: 10px;  /*右からのボタンの配置場所を指定*/
+  bottom: 10px; /*下からのボタンの配置場所を指定*/
+  background: #000;  /*ボタンの背景色*/
+  opacity: 0.6;
+  border-radius: 50%;  /*ボタンを丸くする*/
+}
+#page_top a{
+  position: relative;
+  display: block; /*配置の調整*/
+  width: 50px;
+  height: 50px;
+  text-decoration: none;  /*文字の下線を消す*/
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -15px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top:hover {
+  opacity: 1.0;
+}
+
+/*パソコンで表示する場合のCSS*/
+@media (min-width: 768px) {
+#page_top {
+    font-size: 25px; /*文字のサイズ*/
+}
+#page_top a {
+    width: 50px; /*ボタンの幅*/
+    height: 50px; /*ボタンの高さ*/
+    padding: 0 0 0 0; /*文字の配置場所の調整*/
+}
+}
+
+/*スマホで表示する場合のCSS*/
+@media (max-width: 767px) {
+#page_top {
+    font-size: 20px;
+}
+#page_top a {
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0;
+}
+}

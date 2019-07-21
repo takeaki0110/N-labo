@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/*******************
+ニュースページのスタイルを定義
+********************/
+.wrap-contents {
+    background-image: url("../images/bg.jpg");
+}
+.contents-bg {
+    max-width: 1000px;
+    background-color: #E5FFFF;
+    margin:0 auto;
+    padding-bottom: 50px;
+}
+.contents-bg dl {
+    padding-top: 30px;
+    padding-left: 5px;
+}
+
+.card-img {
+/*     border: 1px solid #fff; */
+    max-width: 300px;
+    margin: auto;
+     object-fit: contain;
+}
+
+/*ここまで*/
