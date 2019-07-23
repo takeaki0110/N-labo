@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*******************
+セミナーのスタイルを定義
+********************/
+.wrap-contents {
+    background-image: url("../images/bg.jpg");
+    margin:0 auto;
+    /*padding-top: 50px;*/
+    padding-bottom: 50px;
+}
+
+.about-seminar, .accordion {
+    max-width: 1000px;
+    width: 100%;
+    margin:0 auto;
+}
+.about-seminar p {
+    margin: 0 0 0 10px;
+}
+.about-seminar a {
+    text-decoration: underline;
+    color: #000;
+}
+.about-seminar a:hover {
+    color: #B30718;
+}
+.card-header {
+    text-align: center;
+    background-color: #1DA96F !important;
+    border: 2px groove #888;
+}
+.seminar-text {
+    padding: 5px;
+}
+.accordion p {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.card dl {
+    margin-left: 5px;
+}
+
+/*ここまで*/

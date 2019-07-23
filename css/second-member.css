@@ -1,19 +1,69 @@
-h1,h2,h3,h4{
-  margin: 0;
-}
-body * p {
-    margin: 0;
-}
+@charset "utf-8";
 
-/*ここからメンバー*/
+/*******************
+メンバーページのスタイルを定義
+********************/
 .wrap-contents {
-    background-color: grey;
-    max-width: 1000px;
+    background-image: url("../images/bg.jpg");
+    /*max-width: 1000px;*/
     margin:0 auto;
 }
 .staff {
+    max-width: 1000px;
+    width: 100%;
     margin:0 auto;
-    background-color: cyan;
+    background-color: #3AA0D4;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.staff h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 30px;
+}
+.card-img {
+    border: 10px solid #fff;
+}
+.card-body h3 {
+    padding-top: 10px;
+}
+
+.assistant {
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.group-photo {
+    max-width: 1000px;
+    text-align: center;
+    margin:0 auto;
+    background-color: #E5FFFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.group-photo h3{
+    color: #000;
+    text-shadow:1px 1px 1px #fff;
+}
+.group-photo img {
+    max-width: 900px;
+    width: 100%;
+    border: 20px solid #fff;
+    margin-top:30px;
+}
+
+.accordion {
+    max-width: 1000px;
+    width: 100%;
+    margin:0 auto;
+}
+.card-header {
+    text-align: center;
+    background-color: #1DA96F !important;
+    border: 2px groove #888;
 }
 
 /*ここまで*/

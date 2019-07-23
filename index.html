@@ -4,27 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <title>N-labo</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="千葉大学フロンティア医工学センター　中口研究室のホームページです">
+    <meta name="keywords" content="・中口ラボ,カメラ付きトロカール,投影型拡張現実感,診断支援
+,治療支援,生体計測">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/sanitize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="css/arrow.css">
-    <link rel="stylesheet" href="css/top-back.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="css/top-btn.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/slicknav.css">
 </head>
 
 <body>
     <div id="page_top"><a href="#"></a></div>   <!-- 上へ戻るボタン -->
+<header>
 <!-- サブナビ部分 -->
     <div class="sub-nav-bg">
         <div class="sub-nav">
             <ul class="sub-list">
-                <li><a href="#" class="sub-nav-access">アクセス</a></li>
+                <li><a href="#access" class="sub-nav-access">アクセス</a></li>
                 <li><a href="#" class="sub-nav-qa">お問い合わせ</a></li>
                 <li class="sub-nav-translate"></li>
                 <li class="sub-nav-search"></li>
@@ -34,76 +35,39 @@
 <!-- ここまで -->
 
 <!-- ここから動画 -->
-    <div class="main-visual">   <!-- ここからvideoタグまでをbody直下に置くと動画が背景全面にできる -->
+    <div class="main-visual">
         <video src="movies/test.mp4" class="fitMovie" preload="metadata" autoplay loop muted>
-                <!--<source src="images/mainvisual.mp4">-->
             <p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
         </video>
 <!-- ここまで -->
 
 <!-- メインナビ部分 -->
+<nav>
     <div class="main-nav-bg">
         <div class="main-nav clearfix">
-            <a href="#"><img class="logo" src="images/logo.png" alt=""></a>
-            <ul class="main-list">
+            <a href="#"><img class="logo" src="images/logo.png" alt="研究室ロゴの画像"></a>
+            <ul class="main-list" id="menu">
                 <li>
-                    <a href="#" class="nav1">ニュース</a>
-                    <ul class="dropdwn_menu">
-                        <li><a href="#">2019年</a></li>
-                        <li><a href="#">2018年</a></li>
-                        <li><a href="#">2017年</a></li>
-                        <li><a href="#">2016年</a></li>
-                        <li><a href="#">2015年</a></li>
-                        <li><a href="#">2014年</a></li>
-                        <li><a href="#">2013年</a></li>
-                        <li><a href="#">2012年</a></li>
-                        <li><a href="#">2011年</a></li>
-                    </ul>
+                    <a href="contents/second-news.html" class="nav1">ニュース</a>
                 </li>
                 <li>
-                    <a href="#" class="nav2">研究テーマ</a>
-                    <ul class="dropdwn_menu">
-                        <li><a href="#">治療支援</a></li>
-                        <li><a href="#">医療訓練システム</a></li>
-                        <li><a href="#">舌画像の計測・解析</a></li>
-                        <li><a href="#">画像診断支援</a></li>
-                    </ul>
+                    <a href="contents/second-thema.html" class="nav2">研究テーマ</a>
                 </li>
                 <li>
-                    <a href="#" class="nav3">業績</a>
-                    <ul class="dropdwn_menu">
-                        <li><a href="">受賞</a></li>
-                        <li><a href="#">原著論文</a></li>
-                        <li><a href="#">国際会議</a></li>
-                        <li><a href="#">国内学会・研究会</a></li>
-                        <li><a href="#">著書</a></li>
-                        <li><a href="#">解説・記事</a></li>
-                        <li><a href="#">展示</a></li>
-                        <li><a href="#">学会活動</a></li>
-                    </ul>
+                    <a href="contents/second-works.html" class="nav3">業績</a>
                 </li>
                 <li>
-                    <a href="#" class="nav4">セミナー</a>
-                    <ul class="dropdwn_menu">
-                        <li><a href="#">開催中</a></li>
-                        <li><a href="#">過去の開催記録</a></li>
-                    </ul>
+                    <a href="contents/second-seminar.html" class="nav4">セミナー</a>
                 </li>
                 <li>
-                    <a href="#" class="nav5">イベント</a>
-                    <ul class="dropdwn_menu">
-                        <li><a href="#">2019年</a></li>
-                        <li><a href="#">2018年</a></li>
-                        <li><a href="#">2017年</a></li>
-                        <li><a href="#">2016年</a></li>
-                        <li><a href="#">2015年</a></li>
-                    </ul>
+                    <a href="contents/second-event.html" class="nav5">イベント</a>
                 </li>
-                <li><a href="#" class="nav6">メンバー</a>
+                <li><a href="contents/second-member.html" class="nav6">メンバー</a>
                 </li>
             </ul>
         </div>
     </div>
+</nav>
 <!-- ここまで -->
 
 <!-- ここは動画前面の文字表示 -->
@@ -117,86 +81,96 @@
             </div>
         </div>
     </div>
+</header>
 <!-- 動画・ファーストビューはここまで -->
 
+<main>
 <div class="contents-bg">
 <!-- 研究テーマ -->
+<section>
     <div class="thema">
         <h2>研究テーマ</h2>
             <div class="thema-contents">
                 <ul>
-                    <li><h3>治療支援</h3><a href="#"><img src="images/thema1.jpg" alt=""></a></li>
-                    <li><h3>医療訓練システム</h3><a href="#"><img src="images/thema2.jpg" alt=""></a></li>
-                    <li><h3>舌画像の計測・解析</h3><a href="#"><img src="images/thema3.jpg" alt=""></a></li>
-                    <li><h3>画像診断支援</h3><a href="#"><img src="images/thema4.jpg" alt=""></a></li>
+                    <li><h3>治療支援</h3><a href="contents/second-thema.html#medical_treatment"><img src="images/thema1.jpg" alt="治療支援の画像"></a></li>
+                    <li><h3>医療訓練システム</h3><a href="contents/second-thema.html#medical_training"><img src="images/thema2.jpg" alt="医療訓練システムの画像"></a></li>
+                    <li><h3>舌画像の計測・解析</h3><a href="contents/second-thema.html#tongue"><img src="images/thema3.jpg" alt="舌画像の計測・解析の画像"></a></li>
+                    <li><h3>画像診断支援</h3><a href="contents/second-thema.html#picture_diagnosis"><img src="images/thema4.jpg" alt="画像診断支援の画像"></a></li>
                 </ul>
             </div>
-            <p>研究業績・学会発表等の詳細が知りたい方は<a href="#">こちら</a>へ</p>
+            <p>研究業績・学会発表等の詳細が知りたい方は<a href="contents/second-works.html">こちら</a>へ</p>
     </div>
+</section>
 <!-- ここまで -->
 
 <!-- ここからニュース・Twitter -->
+<section>
     <div class="info">
         <div class="news">
             <h4>最近のニュース</h4>
             <div class="news-list">
                     <dl>
                         <dt>2019.6.7</dt>
-                        <dd><a href="#">M2 篠崎真良君，M1 関口陽太君が沖縄コンベンションセンターで開催した第58回日本生体医工学会大会にて発表を行いました．</a></dd>
+                        <dd><a href="contents/second-news.html#n2019-06-07">M2 篠崎真良君，M1 関口陽太君が沖縄コンベンションセンターで開催した第58回日本生体医工学会大会にて発表を行いました．</a></dd>
                     </dl>
                     <dl>
                         <dt>2019.5.31</dt>
-                        <dd><a href="#">当研究室が開発した拡張現実型聴診トレーニングシステムEARSが，医学雑誌Hospitalistに掲載されました．</a></dd>
+                        <dd><a href="contents/second-news.html#n2019-05-31">当研究室が開発した拡張現実型聴診トレーニングシステムEARSが，医学雑誌Hospitalistに掲載されました．</a></dd>
                     </dl>
                     <dl>
                         <dt>2019.5.30</dt>
-                        <dd><a href="#">中口，吉村が鄭州大学第5付属病院を訪問し，"Augmented Reality for Medical Applications"というタイトルで講演しました．</a></dd>
+                        <dd><a href="contents/second-news.html#n2019-05-30">中口，吉村が鄭州大学第5付属病院を訪問し，"Augmented Reality for Medical Applications"というタイトルで講演しました．</a></dd>
                     </dl>
                     <dl>
                         <dt>2019.5.18</dt>
-                        <dd><a href="#">中口が横浜で開催された第2回医用VRセミナー「医学及び看護教育へのVR技術応用」において，「拡張模擬患者を実現するARシミュレータ」について講演しました．</a></dd>
-                    </dl>            </div>
+                        <dd><a href="contents/second-news.html#n2019-05-18">中口が横浜で開催された第2回医用VRセミナー「医学及び看護教育へのVR技術応用」において，「拡張模擬患者を実現するARシミュレータ」について講演しました．</a></dd>
+                    </dl>
+                </div>
             <div class="news-list-all">
-                <a href="#">一覧を見る</a>
+                <a href="contents/second-news.html">一覧を見る</a>
             </div>
         </div>
-        <div class="twitter-timeline">
-            ここはTwitterのタイムラインを表示
+        <div class="twitter-widget">
+            <a class="twitter-timeline" data-width="100%" data-height="500" data-theme="dark" href="https://twitter.com/gucchi1048?ref_src=twsrc%5Etfw">Tweets by gucchi1048</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
     </div>
+</section>
 <!-- ここまで -->
 
 <!-- ここからメンバーエリア -->
+<section>
     <div class="member-area">
         <h2>研究室メンバー</h2>
         <div class="labo-member">
             <div class="labo-frame">
                 <p>フロンティア医工学センター</p>
                 <p><div class="proffesor-text">教授　中口 俊哉</div></p>
-                <div class="member-bg"><img src="images/proffesor.jpg" alt=""></div>
+                <div class="member-bg"><img src="images/proffesor.jpg" alt="教授の写真"></div>
             </div>
             <div class="labo-frame">
                 <p>助教　吉村 裕一郎／秘書　原田 真弓</p>
                 <p>研究室メンバー（集合写真）</p>
-                <div class="member-bg"><img src="images/member.jpg" alt=""></div>
+                <div class="member-bg"><img src="images/member.jpg" alt="メンバー集合写真"></div>
             </div>
         </div>
         <h3>研究室内イベントのひとコマ</h3>
         <div class="labo-member">
             <div class="labo-frame">
                 <p>生体医工学会2019番外編 6/6～6/8</p>
-                <div class="member-bg"><img src="images/event1.jpg" alt=""></div>
+                <div class="member-bg"><img src="images/event1.jpg" alt="生体医工学会2019番外編の写真"></div>
             </div>
             <div class="labo-frame">
                  <p>追いコン2019</p>
-                <div class="member-bg"><img src="images/event2.jpg" alt=""></div>
+                <div class="member-bg"><img src="images/event2.jpg" alt="追いコン2019の写真"></div>
             </div>
         </div>
     </div>
+</section>
 <!-- ここまで -->
 </div><!-- contents-bg -->
 
 <!-- ここからアクセス -->
+<section id="access">
 <div class="gl-access">
     <div class="access-text">
         <h3>アクセス</h3>
@@ -211,14 +185,18 @@
         <p class="access-qa">お問い合わせは<a href="#">こちら</a></p>
     </div>
 </div>
+</section>
+</main>
+
 <!-- ここまで -->
 
 <!-- ここからフッター -->
+<footer>
 <div class="gl-footer-bg">
     <div class="gl-footer">
         <div class="logo-address">
             <div><a href="#"><img class="footer-logo" src="images/footer-logo.png" alt="small-logo"></a></div>
-            <div class="footer-address">
+            <div class="footer-address" id="address">
                 <p>千葉大学フロンティア医工学センター　中口研究室</p>
                 <p>住所：〒263-8522 千葉市稲毛区弥生町1-33</p>
                 <p>電話/Fax： 043-290-3296（直通）</p>
@@ -227,24 +205,24 @@
         </div>
         <div class="link-box">
             <ul class="link-list">
-                <li><a href="#">ニュース</a></li>
-                <li><a href="#">研究テーマ</a></li>
-                <li><a href="#">業績</a></li>
-                <li><a href="#">セミナー</a></li>
+                <li><a href="contents/second-news.html">ニュース</a></li>
+                <li><a href="contents/second-thema.html">研究テーマ</a></li>
+                <li><a href="contents/second-works.html">業績</a></li>
+                <li><a href="contents/second-seminar.html">セミナー</a></li>
                 <li><a href="#">お問い合わせ</a></li>
             </ul>
             <ul class="link-list">
-                <li><a href="#">イベント</a></li>
-                <li><a href="#">メンバー</a></li>
-                <li><a href="#">アクセス</a></li>
-                <li><a href="#">リンク</a></li>
+                <li><a href="contents/second-event.html">イベント</a></li>
+                <li><a href="contents/second-member.html">メンバー</a></li>
+                <li><a href="#access">アクセス</a></li>
+                <li><a href="contents/second-link.html">リンク</a></li>
             </ul>
             <ul  class="link-list">
                 <li>研究室メンバー用</li>
-                <li class="link-list-member"><a href="#">蔵書DB</a></li>
-                <li class="link-list-member"><a href="#">Git</a></li>
-                <li class="link-list-member"><a href="#">Module</a></li>
-                <li class="link-list-member"><a href="#">Slack</a></li>
+                <li class="link-list-member"><a href="http://nlab.tms.chiba-u.jp/book/">蔵書DB</a></li>
+                <li class="link-list-member"><a href="http://nlab.tms.chiba-u.jp/gitbucket/">Git</a></li>
+                <li class="link-list-member"><a href="https://nlab.tms.chiba-u.jp/moodle/login/index.php">Module</a></li>
+                <li class="link-list-member"><a href="http://nakaguchilab.slack.com/">Slack</a></li>
             </ul>
         </div>
     </div>
@@ -252,14 +230,14 @@
         <small>&copy; 2019 Nakaguchi Labo</small>
     </div>
 </div>
+</footer>
     <!-- ここまで -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/movie.js"></script>
-    <script src="js/dropdown.js"></script>
-    <script src="js/top-back.js"></script>
-    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
-    <!-- <script src="js/holder.min.js"></script> -->
+    <script src="js/top-btn.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/slicknav_mine.js"></script>
 </body>
 
 </html>
