@@ -175,6 +175,7 @@ slicknavにロゴ表示
 }
 .link-list {
     float: left;
+    color: #000;
 /*     overflow: hidden; */
 }
 .link-list li {

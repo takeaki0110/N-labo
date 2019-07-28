@@ -20,5 +20,7 @@
     background-color: #1DA96F !important;
     border: 2px groove #888;
 }
-
+.row {
+    padding: 10px;
+}
 /*ここまで*/

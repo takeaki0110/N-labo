@@ -30,7 +30,8 @@
 .breadcrumbs ol li:first-child::before {
     padding: 0 5px 0 5px;
     content: "\f015";
-    font-family: FontAwesome;
+    font-family: 'FontAwesome';
+    font-weight: 400;
 }
 .breadcrumbs li a:hover {
     color: red;

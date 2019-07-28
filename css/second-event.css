@@ -16,10 +16,11 @@
 
 .thema-title {
     max-width: 1000px;
-    background-color: #1DA96F;
+    background-color: #076EB2;
     margin:0 auto;
     text-align: center;
     padding: 10px;
+    margin-bottom: 25px;
 }
 
 .thema-title:nth-last-child(n+2){
@@ -33,6 +34,10 @@
     /*color: #fff;*/
     /*text-shadow: 1px 1px 1px #fff;*/
     font-size: 1.8rem;
+}
+.card-header {
+    background-color: #1DA96F !important;
+    border: 2px groove #888;
 }
 
 .card-deck {
